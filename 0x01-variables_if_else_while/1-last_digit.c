@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * manin - Entry point
+ * main - Entry point
  *
  * Return: Always Success (0)
 */

@@ -8,14 +8,17 @@
 
 int main(void)
 {
-	int i;
-	char alp;
+	int digit = 48;
 
-	for (i = 0; i < 10; i++)
-		putchar(i);
+	while (digit <= 102)
+	{
+		putchar(digit);
 
-	for (alp = 'a'; alp < 'g'; alp++)
-		putchar(alp);
+	 
+		if (digit == 57)
+			digit += 39;
+		++digit;
+	}
 	putchar('\n');
 
 	return (0);

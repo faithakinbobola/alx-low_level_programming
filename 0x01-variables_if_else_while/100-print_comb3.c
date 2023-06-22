@@ -8,18 +8,32 @@
 
 int main(void)
 {
-	int d;
+	int a = '0';
 
-	for (d = 0; d < 100; d++)
+	while (a <= '9')
 	{
-		putchar((d / 10) + '0');
-		putchar((d % 10) + '0');
-		if (d != 99)
+		int b = a + 1;
+
+		while (b <= '9')
 		{
-			putchar(',');
-			putchar(' ');
+			if (a != b)
+			{
+
+				putchar(a);
+				putchar(b);
+
+				if (b == '8' && a == '9')
+					continue;
+
+				putchar(',');
+				putchar(' ');
+
+			}
+			b++;
 		}
+		a++;
 	}
+
 	putchar('\n');
 
 	return (0);

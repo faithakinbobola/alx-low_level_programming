@@ -21,7 +21,7 @@ int main(void)
 
 				putchar(a);
 				putchar(b);
-				
+
 				if (a + b != 17)
 				{
 					putchar(',');
@@ -29,9 +29,9 @@ int main(void)
 				}
 
 			}
-			++b;
+			b++;
 		}
-		++a;
+		a++;
 	}
 
 	putchar('\n');

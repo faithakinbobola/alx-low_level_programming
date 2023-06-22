@@ -21,12 +21,12 @@ int main(void)
 
 				putchar(a);
 				putchar(b);
-
-				if (b == '8' && a == '9')
-					continue;
-
-				putchar(',');
-				putchar(' ');
+				
+				if (a + b != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 
 			}
 			++b;

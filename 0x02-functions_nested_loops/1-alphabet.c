@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * A function that prints alphabets
+ * print_alphabet - utilities on the _putchar function to print
+ *	the alphabet a - z
  *
 */
 

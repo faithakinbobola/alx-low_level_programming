@@ -3,9 +3,7 @@
 /**
  * _islower - A function name that checks for lower character
  *
- * function that checks for lowercase character
- *
- * c: parmneter
+ * @c: parmneter
  *
  * Return: 1 if true, 0 if false
 */

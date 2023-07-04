@@ -8,6 +8,8 @@
  * @src: a string input
  *
  * @n: an integer input
+ *
+ * Return: a string of character
  */
 
 char *_strncat(char *dest, char *src, int n)

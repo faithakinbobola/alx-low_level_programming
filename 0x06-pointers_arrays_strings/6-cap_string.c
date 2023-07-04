@@ -3,30 +3,35 @@
 /**
  * cap_string - a function that capitalzies all words of a string
  *
- * @str: input pointer
+ * @s: input pointer
  *
  * Return: returns a string of characters
  */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	char *ptr = str;
-	int capitalize_next = 1;
+	int i = 0;
 
-	while (*ptr != '\0')
+	while (s[i] != '\0')
 	{
-		if (isspace(*ptr) || ispunct(*ptr))
-		{
-			capitalize_next = 1;
-		}
-		else if (capitalize_next)
-		{
-			*ptr = toupper(*ptr);
-			capitalize_next = 0;
-		}
 
-		ptr++;
+		if (s[i] >= 97 && s[i] <= 122)
+		{
+			if (i == 0)
+			{
+				s[i] -= 32;
+			}
+
+			if (s[i - 1] == 32 || s[i - 1] == 9 || s[i - 1] == 10 ||
+				s[i - 1] == 44 || s[i - 1] == 59 || s[i - 1] == 46 ||
+				s[i - 1] == 33 || s[i - 1] == 63 || s[i - 1] == 34 ||
+				s[i - 1] == 40 || s[i - 1] == 41 || s[i - 1] == 123 ||
+				s[i - 1] == 124)
+			{
+				s[i] -= 32;
+			}
+		}
+		i++;
 	}
-
-	return (str);
+	return (s);
 }

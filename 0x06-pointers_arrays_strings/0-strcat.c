@@ -10,7 +10,8 @@
  * Return: a concatenated string
  */
 
-char *_strcat(char *dest, char *src) {
+char *_strcat(char *dest, char *src)
+{
 	char *ptr = dest;
 
 	while (*ptr != '\0')
@@ -27,5 +28,5 @@ char *_strcat(char *dest, char *src) {
 
 	*ptr = '\0';
 
-	return dest;
+	return (dest);
 }

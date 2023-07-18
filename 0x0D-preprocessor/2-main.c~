@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+/**
+ * printf - Prints file name
+*/
+
+printf("%s\n", __FILE__)
